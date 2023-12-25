@@ -2,4 +2,4 @@
 
 ## My Website
 
-Check out my website hosted on Netlify: [MAJOY DANAY](maryjoy-portfolio.netlify.app)
+Check out my website hosted on Netlify: [MAJOY DANAY](https://maryjoy-portfolio.netlify.app/)
