@@ -1,4 +1,5 @@
 <?php
+// Your existing PHP code with modifications for sorting
 $servername = "127.0.0.1"; 
 $username = "root"; 
 $password = "";
@@ -45,7 +46,7 @@ switch ($request_method) {
     
     case 'OPTIONS':
         header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Methods: POST, GET"); 
+        header("Access-Control-Allow-Methods: POST, GET, OPTIONS, DELETE, PATCH"); 
         header("Access-Control-Allow-Headers: Content-Type");
         header("HTTP/1.1 200 OK");
         break;
