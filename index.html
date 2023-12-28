@@ -68,10 +68,6 @@
     <div class="goals">
       <p id="goals">My Goals as a Person</p>
       <p>Expand my skills beyond just coding.</p>
-      <p>
-        Get recognized not by everyone, but by myself for my hardwork and
-        skills I showcased.
-      </p>
       <p>Become a responsible IT professional.</p>
       <p>
         Be open to learning from others' successes and, yes, even their
@@ -154,7 +150,76 @@
       </p>
       <hr />
     </div>
-    <div></div>
+    <div class="image-gallery">
+      <img src="./images/planting.jpg" alt="A bunch of cacti in a pot" />
+      <img
+        class="light"
+        src="images/light.jpg"
+        alt="Ligtning in a dark place"
+      />
+      <img class="cat" src="./images/cat.jpg" alt="A cat sitting" />
+      <img class="night" src="./images/night.jpg" alt="Night Sky" />
+      <img src="./images/flower.jpg" alt="Flowers in a pot" />
+      <p id="gallery">Majoy's Gallery</p>
+      <img
+        class="dog"
+        src="./images/dog.jpg"
+        alt="A cute little dog in an elbow"
+      />
+    </div>
+    <hr />
+    <div>
+      <div class="your-comment">
+        <div class="team-comment">
+          <h2 id="comments">Comments</h2>
+          <label for="sortOrder">Sort Order:</label>
+          <select id="sortOrder" onchange="sortComments()">
+            <option value="desc">Descending</option>
+            <option value="asc">Ascending</option>
+          </select>
+          <p id="comment_section"></p>
+          <p>Leave a comment below:</p>
+        </div>
+        <form>
+          <div class="comment-form">
+            <div class="com-1">
+              <label for="name"> Name</label>
+            </div>
+            <div class="com-2">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                minlength="3"
+                maxlength="45"
+                oninput="validate()"
+                autocomplete="off"
+              />
+            </div>
+            <div class="com-3">
+              <label for="comment"> Comment</label>
+            </div>
+            <div class="com-4">
+              <input
+                type="textarea"
+                name="comment"
+                id="comment"
+                oninput="validate()"
+                rows="5"
+                cols="25"
+                minlength="3"
+                maxlength="150"
+              />
+            </div>
+            <div class="com-5">
+              <button type="button" id="comment_button" disabled>
+                Comment
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

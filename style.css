@@ -87,7 +87,8 @@ div.info-class {
 }
 
 p#goals,
-p#journal {
+p#journal,
+p#gallery {
   text-align: center;
   font-size: 35px;
 }
@@ -143,4 +144,25 @@ form {
 
 #form_div input[type="submit"] {
   background-color: rgb(255, 115, 0);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* or 'center' depending on your preference */
+  margin: 10px; /* Adjust margin as needed */
+}
+
+.image-gallery img {
+  width: 100%; /* Ensure images take up the full width of their container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Set a maximum width to limit size */
+  max-height: 200px; /* Set a maximum height to limit size */
+  margin-bottom: 20px; /* Adjust margin between images as needed */
+  border: 5px solid salmon;
+}
+
+p#gallery {
+  text-align: center;
+  font-size: 50px;
 }
